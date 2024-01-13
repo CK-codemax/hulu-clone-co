@@ -13,7 +13,7 @@ import { useHuluContext } from "@/contexts/HuluContext";
 
   export default function Header(){
 const { genre, path : activePath } = useHuluContext()
-    
+    alert('hacked')
     
 
 

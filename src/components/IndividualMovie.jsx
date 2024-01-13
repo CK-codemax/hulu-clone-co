@@ -4,7 +4,7 @@ import RelatedList from "@/components/RelatedList";
   import { fetchRelatedMovieList } from "@/utilities/fetcherFunctions"
 export default async function IndividualMovie({ movie }){
 
-  
+  console.log('yes')
 
   
 
