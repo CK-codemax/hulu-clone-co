@@ -15,7 +15,7 @@ const peopleWithPics = people.filter(person => person.profile_path !== null)
         <h1 className="text-center pt-6">No results found</h1>
       )}
 
-      {people && <PeopleList people={peopleArr} />}
+      {people && <PeopleList people={peopleArr}/>}
     </div>
   );
 }

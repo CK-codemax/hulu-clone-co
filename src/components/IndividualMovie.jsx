@@ -3,19 +3,10 @@
 import RelatedList from "@/components/RelatedList";
   import { fetchRelatedMovieList } from "@/utilities/fetcherFunctions"
 export default async function IndividualMovie({ movie }){
-
-  console.log('yes')
-
-  
-
-  
-
   
   const data = movie.genres.map( genre => fetchRelatedMovieList(genre, movie.id))
   const relatedData = await Promise.all(data)
 
-
-  
   return(
       <div className="w-full">
         <div className="p-4 md:pt-8 flex flex-col md:flex-row items-center content-center max-w-6xl mx-auto md:space-x-6">

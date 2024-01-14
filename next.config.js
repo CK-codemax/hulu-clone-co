@@ -2,7 +2,13 @@
 const nextConfig = {
   
   images: {
-    domains: ["image.tmdb.org", "links.papareact.com"],
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'image.tmdb.org',
+        port: '',
+      },
+    ],
   },
   async redirects() {
     return [

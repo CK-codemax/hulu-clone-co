@@ -1,7 +1,6 @@
 'use client'
 import { useHuluContext } from '@/contexts/HuluContext'
 import Image from 'next/image';
-import { ThumbUpIcon } from '@heroicons/react/24/outline';
 import Link from "next/link";
 
 export default function SmallTVThumbNail({movie}){

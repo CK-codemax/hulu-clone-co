@@ -14,11 +14,15 @@ const related = results?.list.slice(0,8)
                                            
   return (
     <div >
-      <Link className="ml-6" href={`/home/${genre}`} onClick={()=>handleChangeGenre(genre)}> More {' '}<span className="font-semibold " >{results?.name}</span>{' '} movies</Link>
+      {!results?.name.includes('&') && 
+      <Link className="ml-20" href={`$/home/${genre}`} onClick={()=>handleChangeGenre(genre)}> More {' '}<span className="font-semibold " >{results?.name}</span>{' '} movies</Link>
+  }
       <div className=" flex gap-x-2.5 max-w-6xl mx-auto px-5 py-4 overflow-x-scroll scrollbar-hide ">{related?.map((movie) => (
         <SmallThumbNail key={movie.id} movie={movie} />
       ))}
       </div>
+      
     </div>
+      
   );
 }

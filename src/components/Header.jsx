@@ -7,6 +7,7 @@ import { InformationCircleIcon, HomeIcon, UserIcon, VideoCameraIcon, MagnifyingG
 
   import HeaderItem from "./HeaderItem";
 import { useHuluContext } from "@/contexts/HuluContext";
+import DarkModeSwitch from "./DarkModeSwitch";
 
 
 
@@ -18,11 +19,12 @@ const { genre, path : activePath } = useHuluContext()
 
   return (
   <header className="flex sm:flex-row m-5 justify-between items-center h-auto">
-    <div className="w-[50%]">
+    <div className="w-[50%] flex items-center -translate-y-1.5">
     <Link href='/'>
-  <Image className="object-contain w-[100px] sm:w-[200px]" alt='hulu-logo'
-    src="https://links.papareact.com/ua6" width={200} height={100} />
+    <Image className="object-contain w-[100px] sm:w-[200px] h-auto" alt='hulu-logo'
+    src="/hulu-logo.png" width={200} height={100} />
     </Link>
+    <DarkModeSwitch />
     </div>
    
   <div className="flex flex-grow justify-evenly max-w-xl">
@@ -35,7 +37,7 @@ const { genre, path : activePath } = useHuluContext()
     
     />
   <HeaderItem title='tv' Icon={VideoCameraIcon} path={`/tv`}  />
-    <HeaderItem title='about' Icon={InformationCircleIcon} path='/'  />
+    <HeaderItem title='about' Icon={InformationCircleIcon} path='/about'  />
     
 
   </div>

@@ -13,11 +13,12 @@ export default function SearchBox({ keywords, type }) {
 
       router.push(`/people/searchPeople/${query}`);
     }
-    if(type === 'search'){router.push(`/search/searchMovies/${query}`);
-                         }  
-
-    if(type === 'tv'){router.push(`/tv/searchTV/${query}`);
-       }     
+    if(type === 'search'){
+      router.push(`/search/searchMovies/${query}`);
+  }
+  if(type === 'tv'){
+    router.push(`/tv/searchTV/${query}`);
+  }     
 
 handleResetQuery();
   }
@@ -36,7 +37,7 @@ handleResetQuery();
       <button
         disabled={!query}
         type="submit"
-        className="text-amber-600 disabled:text-gray-400"
+        className="text-[#1ce783] disabled:text-gray-400"
       >
         Search
       </button>
