@@ -13,16 +13,18 @@ import { useHuluContext } from "@/contexts/HuluContext";
 
   export default function Header(){
 const { genre, path : activePath } = useHuluContext()
-    alert('hacked')
     
 
 
   return (
   <header className="flex sm:flex-row m-5 justify-between items-center h-auto">
+    <div className="w-[50%]">
     <Link href='/'>
   <Image className="object-contain w-[100px] sm:w-[200px]" alt='hulu-logo'
     src="https://links.papareact.com/ua6" width={200} height={100} />
     </Link>
+    </div>
+   
   <div className="flex flex-grow justify-evenly max-w-xl">
   <HeaderItem title='home' Icon={HomeIcon} path={`/home/${genre}`} />
     <HeaderItem title='search' Icon={MagnifyingGlassIcon} path={`/search/${genre}`}
