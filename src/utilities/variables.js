@@ -1,3 +1,0 @@
-';
-
-export {API_KEY}
