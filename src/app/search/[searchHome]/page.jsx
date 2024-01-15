@@ -2,7 +2,7 @@ import fetchHomeData from '@/utilities/fetcherFunctions';
 import MovieList from '@/components/MovieList';
 
 
-export default async function FetchSearchHome({ params : {searchHome}}) {
+export default async function FetchSearchHome({ params : {searchHome = null}}) {
   const res = await fetchHomeData(searchHome)
   const movies = res.results
   return (

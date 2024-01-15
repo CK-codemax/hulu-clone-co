@@ -3,7 +3,7 @@ import MovieList from '@/components/MovieList';
 
 
 
-export default async function FetchSearchHome({ params : {query}}) {
+export default async function FetchSearchHome({ params : {query = null}}) {
   const res = await fetchMovieList(query)
   const movies = res.results
   return (

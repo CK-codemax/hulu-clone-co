@@ -2,7 +2,7 @@ import { fetchMovieCredits } from '@/utilities/fetcherFunctions';
 import MovieList from '@/components/MovieList';
 
 
-export default async function FetchSearchHome({ params : {id}}) {
+export default async function FetchSearchHome({ params : {id = null}}) {
   const resMovies = await fetchMovieCredits(id)
   const movies = resMovies?.cast?.filter(movie => (movie.backdrop_path !== null && movie.overview !== "") || (movie.poster_path !== null && movie.overview !== ""))
   

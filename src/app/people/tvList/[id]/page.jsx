@@ -2,7 +2,7 @@ import { fetchTVCredits } from '@/utilities/fetcherFunctions';
 import TvList from '@/components/TvList';
 
 
-export default async function FetchSearchHome({ params : {id}}) {
+export default async function FetchSearchHome({ params : {id = null}}) {
   const resMovies = await fetchTVCredits(id)
   const movies = resMovies?.cast?.filter(movie => (movie.backdrop_path !== null && movie.overview !== "") || (movie.poster_path !== null && movie.overview !== ""))
 

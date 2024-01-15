@@ -2,7 +2,7 @@ import fetchHomeData from '@/utilities/fetcherFunctions';
 import MovieList from '@/components/MovieList';
 
 
-export default async function FetchTVHome({ params : {tvHome}}) {
+export default async function FetchTVHome({ params : {tvHome = null}}) {
   const res = await fetchHomeData(tvHome)
   const movies = res.results
   return (

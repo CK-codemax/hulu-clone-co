@@ -2,7 +2,7 @@ import { fetchPeopleList } from '@/utilities/fetcherFunctions';
 import PeopleList from '@/components/PeopleList';
 
 
-export default async function FetchSearchHome({ params : {query}}) {
+export default async function FetchSearchHome({ params : {query = null}}) {
   const res = await fetchPeopleList(query)
   const people = res.results
 const peopleWithPics = people.filter(person => person.profile_path !== null)
