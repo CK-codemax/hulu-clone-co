@@ -1,0 +1,21 @@
+{
+  "/_not-found": "app/_not-found.js",
+  "/about/page": "app/about/page.js",
+  "/home/[fetchHome]/page": "app/home/[fetchHome]/page.js",
+  "/home/movie/[id]/page": "app/home/movie/[id]/page.js",
+  "/people/[fetchPeopleHome]/page": "app/people/[fetchPeopleHome]/page.js",
+  "/people/individuals/[id]/page": "app/people/individuals/[id]/page.js",
+  "/people/movieList/[id]/page": "app/people/movieList/[id]/page.js",
+  "/people/movie/[id]/page": "app/people/movie/[id]/page.js",
+  "/people/page": "app/people/page.js",
+  "/people/searchPeople/[query]/page": "app/people/searchPeople/[query]/page.js",
+  "/search/[searchHome]/page": "app/search/[searchHome]/page.js",
+  "/people/tvList/[id]/page": "app/people/tvList/[id]/page.js",
+  "/search/movie/[id]/page": "app/search/movie/[id]/page.js",
+  "/search/searchMovies/[query]/page": "app/search/searchMovies/[query]/page.js",
+  "/tv/individual/[id]/page": "app/tv/individual/[id]/page.js",
+  "/tv/[tvHome]/page": "app/tv/[tvHome]/page.js",
+  "/tv/movie/[id]/page": "app/tv/movie/[id]/page.js",
+  "/tv/page": "app/tv/page.js",
+  "/tv/searchTV/[query]/page": "app/tv/searchTV/[query]/page.js"
+}
