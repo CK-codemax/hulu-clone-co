@@ -537,6 +537,9 @@ body {
 .mr-1 {
   margin-right: 0.25rem;
 }
+.ml-10 {
+  margin-left: 2.5rem;
+}
 .line-clamp-2 {
   overflow: hidden;
   display: -webkit-box;
@@ -989,6 +992,10 @@ body {
 }
 
 @media (min-width: 1024px) {
+
+  .lg\:ml-20 {
+    margin-left: 5rem;
+  }
 
   .lg\:-translate-x-0 {
     --tw-translate-x: -0px;

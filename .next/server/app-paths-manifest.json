@@ -1,10 +1,9 @@
 {
-  "/people/tvList/[id]/page": "app/people/tvList/[id]/page.js",
-  "/tv/individual/[id]/page": "app/tv/individual/[id]/page.js",
-  "/people/movie/[id]/page": "app/people/movie/[id]/page.js",
-  "/home/[fetchHome]/page": "app/home/[fetchHome]/page.js",
+  "/home/movie/[id]/page": "app/home/movie/[id]/page.js",
   "/tv/page": "app/tv/page.js",
-  "/tv/searchTV/[query]/page": "app/tv/searchTV/[query]/page.js",
   "/people/page": "app/people/page.js",
-  "/people/individuals/[id]/page": "app/people/individuals/[id]/page.js"
+  "/people/individuals/[id]/page": "app/people/individuals/[id]/page.js",
+  "/home/[fetchHome]/page": "app/home/[fetchHome]/page.js",
+  "/tv/searchTV/[query]/page": "app/tv/searchTV/[query]/page.js",
+  "/tv/individual/[id]/page": "app/tv/individual/[id]/page.js"
 }

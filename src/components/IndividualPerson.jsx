@@ -90,7 +90,7 @@ const images = person.images?.profiles?.length > 8 ? person.images.profiles.slic
           
         
 <div>
-        <p className="mb-3 ml-20">
+        <p className="mb-3 ml-10 lg:ml-20">
           <span className="font-semibold mr-1">Popular movies</span>
           </p>
 
@@ -103,7 +103,7 @@ const images = person.images?.profiles?.length > 8 ? person.images.profiles.slic
 
         <div>
           <Link href={`/people/movieList/${person.id}`}>
-          <p className="mb-3 ml-20">More{" "}
+          <p className="mb-3 ml-10 lg:ml-20">More{" "}
             <span className="font-semibold mr-1"> {person.name} </span>{" "}movies
             </p>
             </Link>
@@ -118,7 +118,7 @@ const images = person.images?.profiles?.length > 8 ? person.images.profiles.slic
         
         <div>
           <Link href={`/people/tvList/${person.id}`}>
-          <p className="mb-3 ml-20">
+          <p className="mb-3 ml-10 lg:ml-20">
             More{""}
             <span className="font-semibold mr-1"> {person.name} </span>{" "}TVSeries
             </p>

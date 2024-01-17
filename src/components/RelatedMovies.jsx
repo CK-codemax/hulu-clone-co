@@ -15,7 +15,7 @@ const related = results?.list.slice(0,8)
   return (
     <div >
       {!results?.name.includes('&') && 
-      <Link className="ml-20" href={`/home/${genre}`} onClick={()=>{handleChangeGenre(genre)
+      <Link className="ml-10 lg:ml-20" href={`/home/${genre}`} onClick={()=>{handleChangeGenre(genre)
       handleChangePath('home')
     }}> More {' '}<span className="font-semibold " >{results?.name}</span>{' '} movies</Link>
   }
