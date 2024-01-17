@@ -21,7 +21,7 @@ const { genre, path : activePath } = useHuluContext()
   <header className="flex sm:flex-row m-5 justify-between items-center h-auto">
     <div className="w-[50%] flex items-center -translate-y-1.5">
     <Link href='/'>
-    <Image className="object-contain w-[100px] sm:w-[200px] h-auto -translate-x-8 lg:-translate-x-0" alt='hulu-logo'
+    <Image className="object-contain w-[100px] sm:w-[200px] h-auto -translate-x-6 sm:-translate-x-8 lg:-translate-x-0" alt='hulu-logo'
     src="/hulu-logo.png" width={200} height={100} />
     </Link>
     <DarkModeSwitch />
