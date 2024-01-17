@@ -528,17 +528,14 @@ body {
 .mb-3 {
   margin-bottom: 0.75rem;
 }
+.ml-10 {
+  margin-left: 2.5rem;
+}
 .ml-2 {
   margin-left: 0.5rem;
 }
-.ml-20 {
-  margin-left: 5rem;
-}
 .mr-1 {
   margin-right: 0.25rem;
-}
-.ml-10 {
-  margin-left: 2.5rem;
 }
 .line-clamp-2 {
   overflow: hidden;
@@ -554,6 +551,9 @@ body {
 }
 .h-5 {
   height: 1.25rem;
+}
+.h-96 {
+  height: 24rem;
 }
 .h-auto {
   height: auto;
@@ -618,6 +618,9 @@ body {
 }
 .items-center {
   align-items: center;
+}
+.justify-center {
+  justify-content: center;
 }
 .justify-between {
   justify-content: space-between;
