@@ -14,12 +14,12 @@ export default function DarkModeSwitch() {
       {mounted &&
         (currentTheme === "dark" ? (
           <SunIcon
-            className="h-5 sm:h-7 cursor-pointer text-orange-400 hover:text-[#1ce783]"
+            className="h-5 sm:h-7 cursor-pointer text-orange-400 hover:text-[#1ce783] -translate-x-10"
             onClick={() => setTheme("light")}
           />
         ) : (
           <MoonIcon
-            className="h-5 sm:h-7 cursor-pointer text-black hover:text-[#1ce783]"
+            className="h-5 sm:h-7 cursor-pointer text-black hover:text-[#1ce783] -translate-x-10"
             onClick={() => setTheme("dark")}
           />
         ))}
