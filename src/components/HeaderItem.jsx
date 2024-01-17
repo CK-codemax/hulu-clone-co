@@ -7,7 +7,7 @@ export default function HeaderItem({ title, path, Icon}){
   const isActive = activePath === title
   
 return(
-<Link href={path} class={`group flex flex-col items-center cursor-pointer w-8 sm:w-16 dark:hover:text-white hover:text-gray-900 ${isActive ? 'text-red-500' : ''}`} onClick={() => {handleChangePath(title)
+<Link href={path} className={`group flex flex-col items-center cursor-pointer w-8 sm:w-16 dark:hover:text-white hover:text-gray-900 ${isActive ? 'text-red-500' : ''}`} onClick={() => {handleChangePath(title)
     handleResetQuery()                                                                                                                                                                                 }}>
 <Icon className="h-5 sm:h-7 mb-1 group-hover:animate-bounce" />
 <p className={`text-xs md:text-sm tracking-widest uppercase opacity-0 sm:group-hover:opacity-100 ${isActive && 'opacity-100'}`}>{title}</p>
