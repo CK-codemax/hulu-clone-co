@@ -8,14 +8,16 @@ import requests from '@/utilities/homeRequests'
 
 
 export default function RelatedMovies({results}){
-  const { handleChangeGenre } = useHuluContext()
+  const { handleChangeGenre, handleChangePath } = useHuluContext()
 const related = results?.list.slice(0,8)
   const genre = Object.keys(requests).find((key) => (key.includes(results?.name)))
                                            
   return (
     <div >
       {!results?.name.includes('&') && 
-      <Link className="ml-20" href={`$/home/${genre}`} onClick={()=>handleChangeGenre(genre)}> More {' '}<span className="font-semibold " >{results?.name}</span>{' '} movies</Link>
+      <Link className="ml-20" href={`/home/${genre}`} onClick={()=>{handleChangeGenre(genre)
+      handleChangePath('home')
+    }}> More {' '}<span className="font-semibold " >{results?.name}</span>{' '} movies</Link>
   }
       <div className=" flex gap-x-2.5 max-w-6xl mx-auto px-5 py-4 overflow-x-scroll scrollbar-hide ">{related?.map((movie) => (
         <SmallThumbNail key={movie.id} movie={movie} />
